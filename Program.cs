@@ -6,17 +6,17 @@ namespace YnuClassificationPrediction
 {
     class PredictionConsole
     {
-        // 아래코드는 수정 X
-        static readonly string Endpoint = "https://ynucustomvision-prediction.cognitiveservices.azure.com/";
-        static readonly string PredictionKey = "51e9a0bde7444cc3892cf923145593cb";
-        static readonly string ProjectId = "639ae309-652b-4c79-9612-86d378576638";
-        static readonly string PublishedName = "YnuClassificationModel";
+        // 1번 여기를 먼저 셋업해 주세요
+        static readonly string Endpoint = "Endpoint";
+        static readonly string PredictionKey = "PredictionKey";
+        static readonly string ProjectId = "ProjectId";
+        static readonly string PublishedName = "PublishedName";
 
-        // Classification 전 이미지의 폴더 경로 --------------------------- 사용에 따라 수정
-        static readonly string TestImageFolder = @"C:\Users\최원석\source\repos\YnuClassificationPrediction\Images\";
+        // 2번 Classification 전 이미지의 폴더 경로 --------------------------- 사용에 따라 수정
+        static readonly string TestImageFolder = @"사용자의 Images 폴더 경로";
 
-        // Classification 후 결과가 담길 폴더 경로(csv 파일명까지) --------------------------- 사용에 따라 수정
-        static readonly string ResultFolder = @"C:\Users\최원석\source\repos\YnuClassificationPrediction\Result\classification_result.csv";
+        // 3번 Classification 후 결과가 담길 폴더 경로(csv 파일명까지) --------------------------- 사용에 따라 수정
+        static readonly string ResultFolder = @"사용자의 Result 폴더 내 csv 파일명 및 경로";
 
         static async Task Main(string[] args)
         {
